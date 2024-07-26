@@ -1,0 +1,30 @@
+/* NavBar.css */
+.navbar {
+    background-color: #1b0000; /* Color de fondo de la barra de navegación */
+    overflow: hidden; /* Asegura que el contenido no se salga de la barra */
+  }
+  
+  .nav-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+  }
+  
+  .nav-item {
+    flex: 1; /* Hace que cada elemento de la lista ocupe un espacio igual */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+  }
+  
+  .nav-item a {
+    display: block;
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-align: center;
+    padding: 14px 16px; /* Espaciado dentro de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+  
+  .nav-item a:hover {
+    background-color: #ec8787; /* Color de fondo al pasar el ratón por encima */
+  }
+  
