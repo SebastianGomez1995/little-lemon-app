@@ -19,12 +19,13 @@
   .nav-item a {
     display: block;
     color: rgb(0, 0, 0); /* Color del texto */
-    text-align: center;
-    padding: 14px 16px; /* Espaciado dentro de los enlaces */
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px; /* Espaciado dentro de los enlaces */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 13px; 
+
   }
-  
   .nav-item a:hover {
     background-color: #ec8787; /* Color de fondo al pasar el ratón por encima */
   }
-  

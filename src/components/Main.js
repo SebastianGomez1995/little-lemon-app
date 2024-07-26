@@ -1,8 +1,13 @@
 import React from 'react';
-
+import HeroSection from './HeroSection';
+import Highlights from './Highlights';
 const Main = () => {
   return (
-    <main>Little Lemon</main>
+    <main>
+      <HeroSection/>
+      <Highlights/>
+    </main>
+    
   );
 };
 
