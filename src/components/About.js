@@ -5,8 +5,8 @@ import './style.css'
 
 const About=()=>{
     return(
-        <HStack className='container' id="HStackHeroSection" alignItems={"flex-start"}>
-            <VStack className="VStackHeroSection" alignItems={"start"} >
+        <HStack className='container' id="about-section" alignItems={"flex-start"} >
+            <VStack className="VStackHeroSection" alignItems={"start"}>
                 <h1>
                     Little Lemon
                 </h1>

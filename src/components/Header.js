@@ -6,7 +6,7 @@ import './style.css'
 
 const Header = () => {
   return (
-  <HStack className='container'>
+  <HStack className='container' id='home-section'>
     <img src={logo} alt="Logo de la Marca Little Lemon"/>
     <Nav orientation='horizontal'/>
   </HStack>
