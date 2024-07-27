@@ -1,3 +1,19 @@
+/*---------personalizacoin componenete testimoniasl---------------------------*/
+.VSTestimonials{
+  background-color: #EDEFEE;
+  width: 25%;
+  border-radius: 10%;
+}
+
+.HSTestimonials{
+  width: 100%;
+}
+
+.HSTestimonials img{
+  padding: 10%;
+  width: 50%;
+}
+/*---------------------------Ajustes Generales--------------------------------*/
 .container{
   padding: 5pt 16.6% 5pt 16.6%;
   width: auto;
@@ -5,9 +21,13 @@
   align-items: center;
 }
 
+
 .container Button{
   width: 180px;
   background-color:#F4CE14;
+}
+h1{  font-size: 30px;
+  font-weight: bold;/*Negrita al texto*/
 }
 
 /*----------Personalizacion del componente Highlights-------------------*/
@@ -25,13 +45,10 @@
   background-color: #EDEFEE;
 }
 
-h1{
-  font-size: 30px;
-  font-weight: bold;/*Negrita al texto*/
-}
 
 
-/*----------Personalizacion del componente HeroSection------------------*/
+
+/*----------Personalizacion del componente HeroSection y about------------------*/
 #HStackHeroSection{
   justify-content: left;
   background-color: #495e57;
@@ -41,6 +58,14 @@ h1{
   padding-top: 2%;
   padding-bottom: 2%;
 }
+#imagen1{ position: absolute;
+  transform: translate(235%,1%);
+  width: 20%;
+  border-radius: 10%;}
+#imagen2{ position: absolute;
+  transform: translate(175%,50%);
+  width: 20%;
+  border-radius: 10%;}
 .imageHero{
   position: absolute;
   transform: translate(166%,1%);
@@ -61,24 +86,31 @@ h1{
     color: #EDEFEE;
   }
   .VStackHeroSection article{
-    font-size: 14px;
     color: #EDEFEE;
     line-height:1.5em;
     padding-bottom: 3%;
   }
-  article p{
+  p{
     font-size: 20px;
   }
 
-
-
-
 /*----------------------------------------------------------------------*/
 /*----------Personalizacion del componente Header y Nav------------------*/
-.navbar {
+.nav {
   width: 84%;
   overflow: hidden;
   font-family:'Markazi';
+}
+
+.nav.horizontal ul{
+  flex-direction: row;
+}
+.nav.vertical{
+  width: 25%;
+}
+.nav.vertical ul{
+  align-items: start;
+  flex-direction: column;
 }
 
 .nav-list {
@@ -104,4 +136,10 @@ h1{
 }
 .nav-item a:hover {
   background-color:#495e57; /* Color de fondo al pasar el ratón por encima */
+}
+
+.VSFooter{
+  width: 25%;
+  
+
 }
