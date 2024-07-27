@@ -4,7 +4,7 @@ import "./style.css"
 
 const HeroSection =() => {
     return(
-    <HStack className="HStackHeroSection" alignItems={"flex-start"}>
+    <HStack className='container' id="HStackHeroSection" alignItems={"flex-start"}>
         <VStack className="VStackHeroSection" alignItems={"start"}>
             <h1>Little Lemon</h1>
             <h2>Chicago</h2>

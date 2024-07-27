@@ -3,10 +3,11 @@ import bruchetta from '../imagen/bruchetta.svg'
 import greakSalad from '../imagen/greek salad.jpg'
 import lemmondessert from '../imagen/lemon dessert.jpg'
 import iconEye from '../imagen/🦆 icon _eye_.svg'
+import './style.css'
 
 const Highlights = () =>{
     return(
-        <VStack className="VStackHigh">
+        <VStack className='container'>
             <HStack className="HStackHigh">
                 <h1>This weeks specials!</h1>
                 <Button>Online Menu</Button>
