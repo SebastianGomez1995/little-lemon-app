@@ -1,7 +1,10 @@
 /* NavBar.css */
+.boxhero{
+  background-color: #495e57;
+}
 .navbar {
-    background-color: #1b0000; /* Color de fondo de la barra de navegación */
-    overflow: hidden; /* Asegura que el contenido no se salga de la barra */
+  width: 50%; 
+  overflow: hidden; /* Asegura que el contenido no se salga de la barra */
   }
   
   .nav-list {
@@ -19,11 +22,12 @@
   .nav-item a {
     display: block;
     color: rgb(0, 0, 0); /* Color del texto */
-    text-align: right;
-    padding-left: 10px;
-    padding-right: 10px; /* Espaciado dentro de los enlaces */
+    text-align: center;
+    /*padding-left: 10px;*/
+    width: auto;
+     /* Espaciado dentro de los enlaces */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 13px; 
+    font-size: 16px;
 
   }
   .nav-item a:hover {

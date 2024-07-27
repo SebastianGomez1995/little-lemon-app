@@ -3,7 +3,7 @@ import "./Nav.css"
 
 const Nav = () => {
   return (
-    <nav className='navBar'>
+    <nav className='navbar'>
         <ul className='nav-list'>
             <li className='nav-item'><a href="/#Home">Home</a></li>
             <li className='nav-item'><a href='/#About'>About</a></li>

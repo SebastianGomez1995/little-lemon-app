@@ -1,21 +1,20 @@
 import React from 'react';
-import { Box,HStack } from '@chakra-ui/react';
+import { HStack } from '@chakra-ui/react';
 import Nav from './Nav';
 import logo from './Logo.svg'
 
 const Header = () => {
   return (
-    <Box>
-      <HStack 
-          px={16}
-          py={4}
+  <HStack
+          paddingTop={2}
+          paddingBottom={2}
+          style={{width:"auto"}}
           justifyContent="center"
-          alignItems="center">
-          <img src={logo} alt="Logo" style={{ width: '150px', height: '150px' }} />
+          alignItems="center"
+          >
+          <img src={logo} alt="Logo" style={{ width: '16%' }} />
           <Nav/>
       </HStack>
-    </Box>
-    
   );
 };
 

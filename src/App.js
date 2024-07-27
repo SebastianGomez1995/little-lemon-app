@@ -6,11 +6,12 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <ChakraProvider>
-      <main>
-        <Header/>
+    <ChakraProvider
+    justifyContent="center">
+      
+        <Header justifyContent="center"/>
         <Main/>
-      </main>
+      
     </ChakraProvider>
   );
 }
