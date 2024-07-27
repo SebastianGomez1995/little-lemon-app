@@ -1,20 +1,15 @@
 import React from 'react';
 import { HStack } from '@chakra-ui/react';
 import Nav from './Nav';
-import logo from './Logo.svg'
+import logo from '../imagen/Logo.svg'
+import './style.css'
 
 const Header = () => {
   return (
-  <HStack
-          paddingTop={2}
-          paddingBottom={2}
-          style={{width:"auto"}}
-          justifyContent="center"
-          alignItems="center"
-          >
-          <img src={logo} alt="Logo" style={{ width: '16%' }} />
-          <Nav/>
-      </HStack>
+  <HStack className='HStackHeader'>
+    <img src={logo} alt="Logo de la Marca Little Lemon"/>
+    <Nav/>
+  </HStack>
   );
 };
 

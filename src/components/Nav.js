@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Nav.css"
+import "./style.css"
 
 const Nav = () => {
   return (
@@ -9,7 +9,7 @@ const Nav = () => {
             <li className='nav-item'><a href='/#About'>About</a></li>
             <li className='nav-item'><a href='/#Menu'>Menu</a></li>
             <li className='nav-item'><a href='/#Reservations'>Reservations</a></li>
-            <li className='nav-item'><a href='/#OrdenOnline'>OrdenOnline</a></li>
+            <li className='nav-item'><a href='/#OrdenOnline'>Orden Online</a></li>
             <li className='nav-item'><a href='/#Login'>Login</a></li>
         </ul>
     </nav>

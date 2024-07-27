@@ -1,0 +1,121 @@
+/*----------Personalizacion del componente Highlights-------------------*/
+.VStackHigh{
+  margin-top: 12%;
+}
+.HStackHigh{
+  width: 100% ;
+  justify-content: space-between;
+  align-items: end;
+  padding-left: 16.6%;
+  padding-right: 16.6%;
+  padding-bottom: 2%;
+}
+.HStackHigh Button{
+  background-color: #F4CE14;
+  width: 20%;
+}
+.VStackHigh1 img{
+  width: auto;
+}
+.VStackHigh1{
+  width: 33%;
+  background-color: #EDEFEE;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;/*Negrita al texto*/
+
+}
+
+/*----------Personalizacion del componente HeroSection------------------*/
+  .HStackHeroSection{
+    justify-content: left;
+    background-color: #495e57;
+    overflow: visible;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 16.6%;
+    position: relative;
+  }
+
+  .imageHero{
+    position: absolute;
+    transform: translate(166%,1%);
+    width: 25%; 
+    border-radius: 10%;
+  }
+
+
+  .VStackHeroSection{
+    width: 36%;
+  }
+
+  .VStackHeroSection h1{
+    font-size: 50px;
+    color: #F4CE14;
+    line-height:  20pt; 
+  }
+  .VStackHeroSection h2{
+    font-size: 30px;
+    color: #EDEFEE;
+  }
+  .VStackHeroSection article{
+    font-size: 14px;
+    color: #EDEFEE;
+    line-height:1.5em;
+    padding-bottom: 3%;
+  }
+  article p{
+    font-size: 20px;
+  }
+
+  .VStackHeroSection Button{
+    width: 35%;
+    background-color: #F4CE14;
+  }
+
+
+  /*----------------------------------------------------------------------*/
+  /*----------Personalizacion del componente Header y Nav------------------*/
+.HStackHeader{
+  padding-top:5pt;
+  padding-bottom: 5pt;
+  width: auto;
+  justify-content:center;
+  align-items:center;
+}
+
+.HStackHeader img{
+width: 16%
+}
+.navbar {
+width: 50%;
+overflow: hidden;
+font-family:'Markazi';
+}
+
+.nav-list {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+}
+
+.nav-item {
+  flex: 1; /* Hace que cada elemento de la lista ocupe un espacio igual */
+  text-align: center; /* Centra el texto dentro de cada elemento */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.nav-item a {
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-size: 14pt;
+  font-weight: bold;/*Negrita al texto*/
+}
+.nav-item a:hover {
+  background-color:#495e57; /* Color de fondo al pasar el ratón por encima */
+}
