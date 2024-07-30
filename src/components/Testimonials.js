@@ -1,40 +1,42 @@
 import { VStack,HStack } from "@chakra-ui/react";
-import iconperfil from '../imagen/perfil.png'
+import CardTestimonials from './CardTestimonials'
 import './style.css'
+
+const testimonios =[
+    {
+        getImage: () =>require('../imagen/perfil.png'),
+        rating:'rating',
+        name: 'Usuario'
+    },
+    {
+        getImage: ()=>require('../imagen/perfil.png'),
+        rating:'rating',
+        name: 'Usuario'
+    },
+    {
+        getImage: ()=>require('../imagen/perfil.png'),
+        rating:'rating',
+        name: 'Usuario'
+    },
+    {
+        getImage: ()=>require('../imagen/perfil.png'),
+        rating:'rating',
+        name: 'Usuario'
+    },
+];
 
 const Testimonials = () =>{
     return(
         <VStack className='container'>
             <h1>Testimonials</h1>
             <HStack className="HSTestimonials">
-                <VStack className='VSTestimonials'>
-                    <h2>Rating</h2>
-                    <HStack>
-                        <img src={iconperfil} alt="foto perfil"/>
-                        <p>Name</p>
-                    </HStack>
-                </VStack>
-                <VStack className='VSTestimonials'>
-                    <h2>Rating</h2>
-                    <HStack>
-                    <img src={iconperfil} alt="foto perfil"/>
-                        <p>Name</p>
-                    </HStack>
-                </VStack>
-                <VStack className='VSTestimonials'>
-                    <h2>Rating</h2>
-                    <HStack>
-                    <img src={iconperfil} alt="foto perfil"/>
-                        <p>Name</p>
-                    </HStack>
-                </VStack>
-                <VStack className='VSTestimonials'>
-                    <h2>Rating</h2>
-                    <HStack>
-                    <img src={iconperfil} alt="foto perfil"/>
-                        <p>Name</p>
-                    </HStack>
-                </VStack>
+                {testimonios.map((testimonio)=>(
+                <CardTestimonials
+                    key={testimonio.name}
+                    imagen={testimonio.getImage()}
+                    rating={testimonio.rating}
+                    name={testimonio.name}
+                />))}
             </HStack>
         </VStack>
     )

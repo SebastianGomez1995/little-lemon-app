@@ -45,6 +45,13 @@ h1{  font-size: 30px;
   background-color: #EDEFEE;
 }
 
+#imageCard{
+  width: 100%;
+}
+.VStackHigh1 h2{
+  padding: 3%;
+  font-size: 20px;
+}
 
 
 
@@ -149,6 +156,4 @@ h1{  font-size: 30px;
 
 .VSFooter{
   width: 25%;
-  
-
 }
