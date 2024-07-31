@@ -1,24 +1,20 @@
 import './App.css';
-import { ChakraProvider } from "@chakra-ui/react";
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import Highlight from './components/Highlights'
-import Testimonials from './components/Testimonials';
-import About from './components/About';
-import Footer from './components/Footer';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BookingPage from './pages/BookingPage';
+import Footer from './components/Footer'
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <ChakraProvider >
-        <Header/>
-        <HeroSection/>
-        <Highlight/>
-        <Testimonials/>
-        <About/>
-        <Footer/>
-    </ChakraProvider>
+        <Router>
+            <Header/>
+            <Routes>
+                <Route path="/" element={<HomePage/>} />
+                <Route path="/booking" element={<BookingPage />} />
+            </Routes>
+            <Footer/>
+        </Router>
   );
 }
 

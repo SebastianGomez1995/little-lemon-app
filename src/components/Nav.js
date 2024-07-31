@@ -16,10 +16,10 @@ const Nav = ({ orientation }) => {
   return (
     <nav className={`nav ${orientation}`}>
       <ul className='nav-list'>
-        <li className='nav-item'><a href='/#Home' onClick={handleClick('home')}>Home</a></li>
-        <li className='nav-item'><a href='/#About' onClick={handleClick('about')}>About</a></li>
+        <li className='nav-item'><a href='/' onClick={handleClick('home')}>Home</a></li>
+        <li className='nav-item'><a href='./about' onClick={handleClick('about')}>About</a></li>
         <li className='nav-item'><a href='/#Menu'>Menu</a></li>
-        <li className='nav-item'><a href='/#Reservations'>Reservations</a></li>
+        <li className='nav-item'><a href='/booking'>Reservations</a></li>
         <li className='nav-item'><a href='/#OrdenOnline'>Orden Online</a></li>
         <li className='nav-item'><a href='/#Login' >Login</a></li>
       </ul>

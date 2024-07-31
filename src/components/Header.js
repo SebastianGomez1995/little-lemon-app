@@ -9,6 +9,7 @@ const Header = () => {
   <HStack className='container' id='home-section'>
     <img src={logo} alt="Logo de la Marca Little Lemon"/>
     <Nav orientation='horizontal'/>
+    
   </HStack>
   );
 };

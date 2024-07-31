@@ -11,17 +11,17 @@ const testimonios =[
     {
         getImage: ()=>require('../imagen/perfil.png'),
         rating:'rating',
-        name: 'Usuario'
+        name: 'Usuario1'
     },
     {
         getImage: ()=>require('../imagen/perfil.png'),
         rating:'rating',
-        name: 'Usuario'
+        name: 'Usuario2'
     },
     {
         getImage: ()=>require('../imagen/perfil.png'),
         rating:'rating',
-        name: 'Usuario'
+        name: 'Usuario3'
     },
 ];
 
