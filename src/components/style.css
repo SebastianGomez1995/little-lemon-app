@@ -1,0 +1,159 @@
+/*---------personalizacoin componenete testimoniasl---------------------------*/
+.VSTestimonials{
+  background-color: #EDEFEE;
+  width: 25%;
+  border-radius: 10%;
+}
+
+.HSTestimonials{
+  width: 100%;
+}
+
+.HSTestimonials img{
+  padding: 10%;
+  width: 50%;
+}
+/*---------------------------Ajustes Generales--------------------------------*/
+.container{
+  padding: 5pt 16.6% 5pt 16.6%;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container Button{
+  width: 180px;
+  background-color:#F4CE14;
+}
+h1{  font-size: 30px;
+  font-weight: bold;/*Negrita al texto*/
+}
+
+/*----------Personalizacion del componente Highlights-------------------*/
+
+.HStackHigh{
+  width: 100%;
+  justify-content: space-between;
+}
+
+.VStackHigh1 img{
+  width: auto;
+}
+.VStackHigh1{
+  width: 33%;
+  background-color: #EDEFEE;
+}
+
+#imageCard{
+  width: 100%;
+}
+.VStackHigh1 h2{
+  padding: 3%;
+  font-size: 20px;
+}
+
+
+
+/*----------Personalizacion del componente HeroSection y about------------------*/
+#about-section{
+  justify-content: left;
+  background-color: #495e57;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#hero-section{
+  justify-content: left;
+  background-color: #495e57;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#imagen1{ position: absolute;
+  transform: translate(235%,1%);
+  width: 20%;
+  border-radius: 10%;}
+#imagen2{ position: absolute;
+  transform: translate(175%,50%);
+  width: 20%;
+  border-radius: 10%;}
+.imageHero{
+  position: absolute;
+  transform: translate(166%,1%);
+  width: 25%;
+  border-radius: 10%;
+}
+  .VStackHeroSection{
+    width: 36%;
+  }
+
+  .VStackHeroSection h1{
+    font-size: 50px;
+    color: #F4CE14;
+    line-height:  20pt;
+  }
+  .VStackHeroSection h2{
+    font-size: 30px;
+    color: #EDEFEE;
+  }
+  .VStackHeroSection article{
+    color: #EDEFEE;
+    line-height:1.5em;
+    padding-bottom: 3%;
+  }
+  p{
+    font-size: 20px;
+  }
+
+/*----------------------------------------------------------------------*/
+/*----------Personalizacion del componente Header y Nav------------------*/
+.nav {
+  width: 84%;
+  overflow: hidden;
+  font-family:'Markazi';
+}
+
+.nav.horizontal ul{
+  flex-direction: row;
+}
+.nav.vertical{
+  width: 25%;
+}
+.nav.vertical ul{
+  align-items: start;
+  flex-direction: column;
+}
+
+.nav-list {
+  list-style-type: none; /* Elimina los puntos de la lista*/
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+}
+
+.nav-item {
+  flex: 1; /* Hace que cada elemento de la lista ocupe un espacio igual */
+  text-align: center; /* Centra el texto dentro de cada elemento */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.nav-item a {
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-size: 14pt;
+  font-weight: bold;/*Negrita al texto*/
+}
+.nav-item a:hover {
+  background-color:#495e57; /* Color de fondo al pasar el ratón por encima */
+}
+
+.VSFooter{
+  width: 25%;
+}
