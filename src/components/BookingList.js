@@ -3,17 +3,13 @@ import { HStack} from '@chakra-ui/react';
 import BookingSlot from './BookingSlot';
 
 const BookingList = ({ slots, onBook }) => {
+  const boSlot = slots.map(slot =>{
+    const itemSlot = `${slot.time}`
+    return <li key={slot.time}>{itemSlot}</li>
+  })
+  console.log({boSlot})
   return (
-    <HStack spacing={4}>
-      {slots.map((slot) => (
-        <BookingSlot
-          key={slot.time}
-          time={slot.time}
-          available={slot.available}
-          onBook={onBook}
-        />
-      ))}
-    </HStack>
+    <HStack as={"option"}><button>{boSlot}</button></HStack>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useFormik, FormikProvider } from 'formik';
 import { VStack, FormControl, FormLabel, Input, Select, FormErrorMessage, Button } from '@chakra-ui/react';
 import * as Yup from 'yup';
+import BookingList from './BookingList';
 
 const BookingForm = ({ availableTimes, updateTimes, onBook }) => {
   const formik = useFormik({
@@ -55,13 +56,9 @@ const BookingForm = ({ availableTimes, updateTimes, onBook }) => {
               onBlur={formik.handleBlur}
               value={formik.values.time}
             >
-              <option value="" label="Select time" />
-              {availableTimes.map((slot) => (
-                <option key={slot.time} value={slot.time} disabled={!slot.available}>
-                  {slot.time}
-                </option>
-              ))}
+              <BookingList slots={availableTimes}/>
             </Select>
+            <BookingList slots={availableTimes}/>
             <FormErrorMessage>{formik.errors.time}</FormErrorMessage>
           </FormControl>
 

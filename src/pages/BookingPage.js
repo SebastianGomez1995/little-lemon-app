@@ -6,8 +6,8 @@ import BookingForm from '../components/BookingForm';
 // Función para inicializar las horas disponibles
 const initializeTimes = () => {
   return [
-    { time: '05:00 pM', available: true },
-    { time: '06:00 pM', available: true },
+    { time: '05:00 PM', available: true },
+    { time: '06:00 PM', available: true },
     { time: '07:00 PM', available: true },
     { time: '08:00 PM', available: true },
     { time: '09:00 PM', available: true },
