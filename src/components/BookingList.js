@@ -1,15 +1,26 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { HStack} from '@chakra-ui/react';
-import BookingSlot from './BookingSlot';
+import GlobalContext from '../context/GlobalContext';
+import { color } from 'framer-motion';
 
-const BookingList = ({ slots, onBook }) => {
-  const boSlot = slots.map(slot =>{
+
+const BookingList = () => {
+
+  const ctx = useContext(GlobalContext)
+  const{availableTimes} = ctx
+
+
+  const boSlot = availableTimes.map(slot =>{
     const itemSlot = `${slot.time}`
-    return <li key={slot.time}>{itemSlot}</li>
+    return <button key={slot.time}
+          style={{ background: slot.available ? "green" : "red" }}
+
+          >{itemSlot}</button>
   })
-  console.log({boSlot})
+
+  console.log(boSlot)
   return (
-    <HStack as={"option"}><button>{boSlot}</button></HStack>
+    <HStack>{boSlot}</HStack>
   );
 };
 

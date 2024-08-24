@@ -1,6 +1,6 @@
 import { VStack,HStack } from "@chakra-ui/react";
 import imagen1 from '../imagen/Mario and Adrian A.jpg'
-import imagen2 from '../imagen/restaurant chef B.jpg'
+import imagen2 from '../imagen/restaurant chef B.jpg' 
 import './style.css'
 
 const About=()=>{

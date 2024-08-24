@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useFormik, FormikProvider } from 'formik';
 import { VStack, FormControl, FormLabel, Input, Select, FormErrorMessage, Button } from '@chakra-ui/react';
 import * as Yup from 'yup';
 import BookingList from './BookingList';
+import GlobalContext from '../context/GlobalContext';
 
-const BookingForm = ({ availableTimes, updateTimes, onBook }) => {
+const BookingForm = () => {
+
+  const ctx = useContext(GlobalContext)
+  const{availableTimes} = ctx
+
   const formik = useFormik({
     initialValues: {
       date: '',
@@ -19,16 +24,16 @@ const BookingForm = ({ availableTimes, updateTimes, onBook }) => {
       occasion: Yup.string().required('Occasion is required'),
     }),
     onSubmit: (values, { resetForm }) => {
-      onBook(values.date, values.time);
+      //onBook(values.date, values.time);
       resetForm();
     },
   });
 
   useEffect(() => {
     if (formik.values.date) {
-      updateTimes(formik.values.date);
+      //updateTimes(formik.values.date);
     }
-  }, [formik.values.date, updateTimes]);
+  }, [formik.values.date]);
 
   return (
     <FormikProvider value={formik}>
@@ -49,16 +54,7 @@ const BookingForm = ({ availableTimes, updateTimes, onBook }) => {
 
           <FormControl isInvalid={formik.touched.time && formik.errors.time}>
             <FormLabel htmlFor="time">Time</FormLabel>
-            <Select
-              id="time"
-              name="time"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.time}
-            >
-              <BookingList slots={availableTimes}/>
-            </Select>
-            <BookingList slots={availableTimes}/>
+            <BookingList/>
             <FormErrorMessage>{formik.errors.time}</FormErrorMessage>
           </FormControl>
 
