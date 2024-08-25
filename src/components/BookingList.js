@@ -1,27 +1,32 @@
-import React, {useContext} from 'react';
-import { HStack} from '@chakra-ui/react';
+import React, { useContext } from 'react';
+import { HStack } from '@chakra-ui/react';
 import GlobalContext from '../context/GlobalContext';
-import { color } from 'framer-motion';
 
+const BookingList = ({  onChange }) => {
+  const ctx = useContext(GlobalContext);
+  const { availableTimes} = ctx;
 
-const BookingList = () => {
+  const manejarClick = (elemento) => {
+    onChange({
+      target: { name: 'time', value: elemento.time },
+    });
+  };
 
-  const ctx = useContext(GlobalContext)
-  const{availableTimes} = ctx
+  const boSlot = availableTimes.map((slot) => {
+    const itemSlot = `${slot.time}`;
+    return (
+      <button
+        key={slot.time}
+        style={{ background: slot.available ? 'green' : 'red', cursor: slot.available ? 'pointer' : 'not-allowed'}}
+        onClick={() => manejarClick(slot)}
+        type='button'
+      >
+        {itemSlot}
+      </button>
+    );
+  });
 
-
-  const boSlot = availableTimes.map(slot =>{
-    const itemSlot = `${slot.time}`
-    return <button key={slot.time}
-          style={{ background: slot.available ? "green" : "red" }}
-
-          >{itemSlot}</button>
-  })
-
-  console.log(boSlot)
-  return (
-    <HStack>{boSlot}</HStack>
-  );
+  return <HStack>{boSlot}</HStack>;
 };
 
 export default BookingList;

@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import { VStack, Box, Heading } from '@chakra-ui/react';
 import BookingForm from '../components/BookingForm';
 import GlobalState from '../context/GlobalState';

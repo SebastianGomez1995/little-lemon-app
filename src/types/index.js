@@ -1,1 +1,2 @@
-export const AGREGAR_RESERVA = 'AGREGAR_RESERVA'
+export const UPDATE_TIMES = 'UPDATE_TIMES'
+export const UPDATE_BOOK = 'UPDATE_BOOK'

@@ -1,13 +1,20 @@
-import { AGREGAR_RESERVA } from "../types";
+import { UPDATE_TIMES, UPDATE_BOOK} from "../types";
 
-export default(state, action)=>{
+const GlobalReducer = (state, action)=>{
     switch(action.type){
-        case AGREGAR_RESERVA:
+        case UPDATE_TIMES:
             return{
                 ...state,
-                reserva: action.payload
+                availableTimes: action.payload
+            };
+        case UPDATE_BOOK:
+            return{
+                ...state,
+                book: action.payload
             }
         default:
             return state
     }
 }
+
+export default GlobalReducer

@@ -8,14 +8,14 @@ import GlobalContext from '../context/GlobalContext';
 const BookingForm = () => {
 
   const ctx = useContext(GlobalContext)
-  const{availableTimes} = ctx
+  const{handleBooking, updateTimesAvailable} = ctx
 
   const formik = useFormik({
     initialValues: {
       date: '',
       time: '',
-      guest: '',
-      occasion: '',
+      guest: '2',
+      occasion: 'other',
     },
     validationSchema: Yup.object({
       date: Yup.date().required('Date is required').min(new Date(), 'The date cannot be earlier than today'),
@@ -24,16 +24,17 @@ const BookingForm = () => {
       occasion: Yup.string().required('Occasion is required'),
     }),
     onSubmit: (values, { resetForm }) => {
-      //onBook(values.date, values.time);
+      handleBooking(values);
       resetForm();
     },
   });
 
   useEffect(() => {
-    if (formik.values.date) {
-      //updateTimes(formik.values.date);
-    }
+
+     updateTimesAvailable(formik.values.date);
+    
   }, [formik.values.date]);
+  
 
   return (
     <FormikProvider value={formik}>
@@ -54,7 +55,12 @@ const BookingForm = () => {
 
           <FormControl isInvalid={formik.touched.time && formik.errors.time}>
             <FormLabel htmlFor="time">Time</FormLabel>
-            <BookingList/>
+            <BookingList
+            type='time'
+            id='time'
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.time}/>
             <FormErrorMessage>{formik.errors.time}</FormErrorMessage>
           </FormControl>
 
@@ -88,7 +94,7 @@ const BookingForm = () => {
             <FormErrorMessage>{formik.errors.occasion}</FormErrorMessage>
           </FormControl>
 
-          <Button type="submit" colorScheme="teal">
+          <Button type="submit" colorScheme="teal" >
             Reserve
           </Button>
         </VStack>
